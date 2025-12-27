@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دیجی‌تِک | فروشگاه حرفه‌ای</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h2><i class="fas fa-shopping-bag"></i> دیجی‌تِک</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">خانه</a></li>
+                    <li><a href="#products">محصولات</a></li>
+                    <li><a href="https://github.com/Daronely">درباره ما</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon" onclick="toggleCart()">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>تکنولوژی روز دنیا در دستان شما</h1>
+            <p>بهترین گجت‌ها با گارانتی اصلی و ارسال سریع</p>
+            <a href="#products" class="btn">خرید کنید</a>
+        </div>
+    </section>
+
+    <section id="products" class="products-container">
+        <h2 class="section-title">محصولات ویژه</h2>
+        <div class="product-grid" id="product-list">
+            </div>
+    </section>
+
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>سبد خرید شما</h3>
+            <span class="close-btn" onclick="toggleCart()">&times;</span>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <p class="empty-msg">سبد خرید خالی است</p>
+        </div>
+        <div class="cart-footer">
+            <div class="total">
+                <span>جمع کل:</span>
+                <span id="total-price">0 تومان</span>
+            </div>
+            <button class="btn checkout-btn" onclick="checkout()">نهایی کردن خرید</button>
+        </div>
+    </div>
+    
+    <div class="overlay" id="overlay" onclick="toggleCart()"></div>
+
+    <footer>
+        <p>طراحی شده با ❤️ توسط دارونلی | تمام حقوق محفوظ است.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
